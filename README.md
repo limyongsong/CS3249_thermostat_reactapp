@@ -1,4 +1,5 @@
 This project was created using Create React App to test a single page app that simulates a thermostat.
+Main code should be in src/App.js
 
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
