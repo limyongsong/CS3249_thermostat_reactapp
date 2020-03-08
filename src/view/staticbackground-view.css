@@ -1,0 +1,82 @@
+
+.staticbackground-view {
+    background-color: gainsboro;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.staticbackground-view .back0{
+    position: relative;
+    /*to center*/
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    /*stack the shapes*/
+    z-index: 0;
+}
+
+.staticbackground-view .back1{
+    position: absolute;
+    /*to center*/
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    z-index: 1;
+}
+
+.staticbackground-view .shadow1{
+    position: absolute;
+    /*to center*/
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    z-index: 1;
+    /*to draw the shadow*/
+    box-shadow: 5px -5px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 10px 5px 2px rgba(173,173,173,1);
+    -moz-box-shadow: 1px 5px 5px 2px rgba(173,173,173,1);
+    box-shadow: 1px 5px 5px 2px rgba(173,173,173,1);
+    border-radius:125px;
+}
+
+.staticbackground-view .back2{
+    position: absolute;
+    /*to center*/
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    z-index: 2;
+    /*sharp color gradient*/
+}
+
+.staticbackground-view .back3p1{
+    position: absolute;
+    /*to center*/
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    z-index: 3;
+    /**/
+
+}
+
+.staticbackground-view .back3{
+    position: absolute;
+    /*to center*/
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    z-index: 4;
+    /**/
+    stroke-dasharray: 165, 800;/* length of arc, circumference of circle */
+    stroke-dashoffset: -90;/* offset of  arc from start point (1/2 of arc length) */
+}

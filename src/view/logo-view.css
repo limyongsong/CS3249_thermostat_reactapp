@@ -1,0 +1,7 @@
+
+.logo-view {
+    position: absolute;
+    top: 200px;
+    left: 140px;
+    z-index: 5;
+}
