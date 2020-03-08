@@ -1,0 +1,8 @@
+.slidertext-view {
+    position: absolute;
+    top: 40px;
+    left: 115px;
+    z-index: 6;
+    color: white;
+    font-size: 35px;
+}
