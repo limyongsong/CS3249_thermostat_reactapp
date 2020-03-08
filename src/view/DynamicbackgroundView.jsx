@@ -28,7 +28,7 @@ class DynamicbackgroundView extends React.Component{
 	    		</div>
 	    	);
     	}
-    	else{
+    	else{ /*else it is off*/
     		return( /*cx, cy need to be half h and w, r shld be correct also*/
 	    		<div className={"staticbackground-view"}>
 					<svg className ={"off"} height="215" width="215">

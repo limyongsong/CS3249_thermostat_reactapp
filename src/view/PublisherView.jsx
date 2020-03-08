@@ -5,6 +5,7 @@ import DynamicbackgroundView from './DynamicbackgroundView'
 import LogoView from './LogoView'
 import CurrenttextView from './CurrenttextView'
 import SlidertextView from './SlidertextView'
+import NotCheckedtoTestTemp from './NotCheckedtoTestTemp'
 
 import './publisher-view.css'
 

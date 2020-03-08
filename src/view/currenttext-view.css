@@ -6,3 +6,12 @@
     color: white;
     font-size: 10px;
 }
+
+.notCheckComponents {
+    position: relative;
+    font-size: 6px;
+    color: grey;
+    left: -90px;
+    top: 100px;
+    z-index: 10;
+}

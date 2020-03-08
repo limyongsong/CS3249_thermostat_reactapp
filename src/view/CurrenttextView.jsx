@@ -1,5 +1,7 @@
 import React from 'react';
 
+import NotCheckedtoTestTemp from './NotCheckedtoTestTemp'
+
 import './currenttext-view.css'
 
 
@@ -12,12 +14,19 @@ class CurrenttextView extends React.Component{
 	  	};
 	}
 
+    updateState(e){
+        this.setState({currentText: e.target.value});
+    }
+
     render(){
     	return (
     		<div className={"currenttext-view"}>
-    			<h1>
+    			<h1 >
     			Current: {this.state.currentText}
     			</h1>
+                <p className={"notCheckComponents"} >
+                <NotCheckedtoTestTemp updateParent={this.updateState.bind(this)}/>
+                </p>
     		</div>
     	);
     }
