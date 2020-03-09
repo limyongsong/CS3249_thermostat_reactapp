@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {Machine} from 'xstate';
+
 import StaticbackgroundView from './StaticbackgroundView'
 import DynamicbackgroundView from './DynamicbackgroundView'
 import LogoView from './LogoView'
@@ -8,6 +10,45 @@ import SlidertextView from './SlidertextView'
 
 import './publisher-view.css'
 
+/* XState not used (feels too convoluted)
+const stateMachine = Machine({
+	initial:' idle',
+	states: { 
+		idle: {
+			on: {
+				SUBMIT: [
+					{
+						target: 'loading',
+						//check if the input for textbox can be converted to numbers
+						cond: (ctx, event) => !isNaN(event.data.currentTextP) && !isNaN(event.data.sliderTextP)
+					},
+					{
+						target: 'error'
+					}
+				]
+			},
+		},
+		loading: {
+			on: {
+				CONDITION_COOL: 'cooling',
+				CONDITION_HEAT: 'heating',
+				CONDITION_OFF: 'off',
+			},
+		},
+		cooling: {
+			on: {
+				SUBMIT: 'loading',
+			},
+		},
+		heating: {
+			SUBMIT: 'loading',
+		},
+		off: {
+			SUBMIT: 'loading',
+		},
+	}
+});
+*/
 
 class PublisherView extends React.Component{
       constructor(props) {

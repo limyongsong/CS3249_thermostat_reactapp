@@ -23,11 +23,13 @@
                 </svg>
 */
 /*unable to do radial slider*/
+/*
 .forborders-view {
     position: absolute;
     top: 50;
     left: 0;
     z-index: 11;
-    stroke-dasharray: 8;/* length of arc, circumference of circle */
-    stroke-dashoffset: 0;/* offset of  arc from start point (1/2 of arc length) */
+    stroke-dasharray: 8;// length of arc, circumference of circle 
+    stroke-dashoffset: 0;// offset of  arc from start point (1/2 of arc length) 
 }
+*/

@@ -2,7 +2,8 @@ This project was created using Create React App to test a single page app that s
 Code that are worked on can be found in /src
 
 Custom events are done in SlidertextView.jsx and CurrenttextView.jsx/ NotCheckedtoTestTemp.jsx
-Github link: https://github.com/limyongsong/CS3249_thermostat_reactapp
+My Github link: https://github.com/limyongsong/CS3249_thermostat_reactapp
+No UI elements from other people was used, UI elements for this project was built using SVG shapes
 Brief description:
 Only the files within src/ were changed from 'React Create App'
 src/view contains all the Views and Viewmodels
