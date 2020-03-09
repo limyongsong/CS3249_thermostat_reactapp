@@ -3,7 +3,8 @@ Code that are worked on can be found in /src
 
 Custom events are done in SlidertextView.jsx and CurrenttextView.jsx/ NotCheckedtoTestTemp.jsx
 My Github link: https://github.com/limyongsong/CS3249_thermostat_reactapp
-No UI elements from other people was used, UI elements for this project was built using SVG shapes
+Some part of the code here was used for CSS animations: https://codepen.io/rishabhp/pen/mXgYpy?editors=1100
+No other UI elements from other people was used, UI elements for this project was built using SVG shapes
 Brief description:
 Only the files within src/ were changed from 'React Create App'
 src/view contains all the Views and Viewmodels
