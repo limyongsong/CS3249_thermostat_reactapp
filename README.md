@@ -2,7 +2,17 @@ This project was created using Create React App to test a single page app that s
 Code that are worked on can be found in /src
 
 Custom events are done in SlidertextView.jsx and CurrenttextView.jsx/ NotCheckedtoTestTemp.jsx
+Github link: https://github.com/limyongsong/CS3249_thermostat_reactapp
+Brief description:
+Only the files within src/ were changed from 'React Create App'
+src/view contains all the Views and Viewmodels
+src/model contains all the Models
+src/index.js compiles and creates the web app
+-File structure follows the class diagram, with the exception of radialslider not being finished (which is replaced with a simple textbox component) [customEvents is still done in the CurrenttextView.jsx]
+...More details in the Assignment 3 Report
 
+No additional libraries/ installations are used outside of "React Create App"
+Below are standard information on how to run "React Create Apps"
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
