@@ -22,7 +22,7 @@ class NotCheckedtoTestTemp extends React.Component{
                     <input
                         type="text"
                         value={this.props.currentText}
-                        onChange={this.props.updateParent}
+                        onKeyUp={this.props.updateParent}
                         style={{ width: "20px" }}/>
 
                 </h1>

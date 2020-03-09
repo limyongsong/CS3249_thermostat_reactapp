@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+//React component UI classes (View/Intent)
 import PublisherView from './view/PublisherView'
 
 function App() {

@@ -1,41 +1,27 @@
 import React from 'react'
 
+import {determineChange} from './../model/Currenttext.Model'
+
 import './dynamicbackground-view.css'
 
 class DynamicbackgroundView extends React.Component{
 	constructor(props) {
 		super(props);
 	  	this.state = { 
-	  		heating: false, /* default current temp is 72*/
-	  		cooling: false,
+	  		conditionD: "heating", /* default current temp is 72*/
 	  	};
 	}
 
     render(){
-    	if (this.state.heating){
-	    	return( /*cx, cy need to be half h and w, r shld be correct also*/
-	    		<div className={"staticbackground-view"}>
-					<svg className ={"heating"} height="215" width="215">
-					</svg>
-	    		</div>
-	    	);
-    	}
-    	else if (this.state.cooling){
-    		return( /*cx, cy need to be half h and w, r shld be correct also*/
-	    		<div className={"staticbackground-view"}>
-					<svg className ={"cooling"} height="215" width="215">
-					</svg>
-	    		</div>
-	    	);
-    	}
-    	else{ /*else it is off*/
-    		return( /*cx, cy need to be half h and w, r shld be correct also*/
-	    		<div className={"staticbackground-view"}>
-					<svg className ={"off"} height="215" width="215">
-					</svg>
-	    		</div>
-	    	);
-    	}
+    	return( /*cx, cy need to be half h and w, r shld be correct also*/
+			<div className={"staticbackground-view"}>
+				<p className={"invisibleD"}>
+				{this.state.conditionD = determineChange(this.props.data.currentTextP, this.props.data.sliderTextP)}
+				</p>
+				<svg className ={this.state.conditionD} height="215" width="215">
+				</svg>
+			</div>
+		);
     }
 }
 
